@@ -37,9 +37,13 @@ Commands
 
     git --help
 
+    git push -f origin *branch name here* = Usually, the command refuses to update a remote ref
+      that is not an ancestor of the local ref used to overwrite it. This flag disables the check. 
+      This can cause the remote repository to lose commits; use it with care.
+
     Next time -TT Git Basics Course
  
-    Checkout = 
+    Checkout =  Allows one to switch branches or restore working tree files
 
 Terms
 
@@ -56,4 +60,13 @@ Upstream = When you make changes, you usually want to send them back "upstream" 
 
 Downstream = when one copies (clone, checkout, etc.) from a repository. 
   Information is flowed "downstream" to you.
+
+Working Tree = a directory, which includes files and subdirectories, associated with a repository. 
+  Here you can add new files, edit existing files, or remove extraneous files. You access the working 
+  tree whenever you open files for a project managed as a Git repository.
+
+
+
+
+
 

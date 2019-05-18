@@ -1,7 +1,9 @@
-Git is now the world's most popular version control system, with close to 70% of developers using it.
- Makes backups of projects and allows devs to collab 
 
- The collection of all the old versions of your project's files is known as a Git repository. It's basically just a folder in which you can edit your files, then run Git commands to store your changes.
+
+Git is now the world's most popular version control system (VCS), with close to 70% of developers using it.
+Makes backups of projects and allows devs to collab 
+
+The collection of all the old versions of your project's files is known as a Git repository. It's basically just a folder in which you can edit your files, then run Git commands to store your changes.
 
 How to branch
 
@@ -36,3 +38,22 @@ Commands
     git --help
 
     Next time -TT Git Basics Course
+ 
+    Checkout = 
+
+Terms
+
+Upstream = When you make changes, you usually want to send them back "upstream" so they make it into that repository 
+  so that everyone pulling from the same source is working with all the same changes. You want to get your changes into the main project
+  so you're not tracking divergent lines of development. There is no absolute upstream repo or downstream repo.
+  Those notions are always relative between two repos and depends on the way data flows:
+
+    If "yourRepo" has declared "otherRepo" as a remote one, then:
+    
+    -you are pulling from upstream "otherRepo" ("otherRepo" is "upstream from you", and you are "downstream for otherRepo").
+    -you are pushing to upstream ("otherRepo" is still "upstream", where the information now goes back to).
+    *Note the "from" and "for": you are not just "downstream", you are "downstream from/for", hence the relative aspect.
+
+Downstream = when one copies (clone, checkout, etc.) from a repository. 
+  Information is flowed "downstream" to you.
+
